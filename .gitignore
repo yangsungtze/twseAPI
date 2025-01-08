@@ -1,3 +1,10 @@
+# macOS-specific files
+.DS_Store
+
+# VS Code-specific files
+.vscode/
+.vscode/*
+
 # Prerequisites
 *.d
 
@@ -30,3 +37,35 @@
 *.exe
 *.out
 *.app
+
+# Debugging files
+*.dSYM/          # macOS debug symbol files (e.g., main.dSYM/)
+source/main.dSYM/
+source/main
+*.core           # Linux core dumps
+*.pdb            # Windows debug symbols
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*~
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Dependency directories
+node_modules/
+build/
+bin/
+dist/
+
+# Operating system-specific files
+Thumbs.db        # Windows
+
+# Docker files (optional)
+docker-compose.override.yml
+.env             # Environment variables (if applicable)
