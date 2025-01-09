@@ -1,6 +1,5 @@
 # Ignore all files in this directory
 data/
-source/builds/
 
 # macOS-specific files
 .DS_Store

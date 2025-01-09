@@ -1,0 +1,6 @@
+build/
+CMakeCache.txt
+*.o
+*.so
+*.a
+*.d
