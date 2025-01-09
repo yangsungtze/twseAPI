@@ -1,5 +1,11 @@
+# Ignore all files in this directory
+data/
+source/builds/
+
 # macOS-specific files
 .DS_Store
+.AppleDouble
+.LSOverride
 
 # VS Code-specific files
 .vscode/
@@ -39,17 +45,20 @@
 *.app
 
 # Debugging files
-*.dSYM/          # macOS debug symbol files (e.g., main.dSYM/)
-source/main.dSYM/
-source/main
-*.core           # Linux core dumps
-*.pdb            # Windows debug symbols
+*.dSYM/Contents        # macOS debug symbol files
+*.core                 # Linux core dumps
+*.pdb                  # Windows debug symbols
 
 # Temporary files
 *.tmp
 *.log
 *.swp
 *~
+*.bak
+
+# Backup and swap files (common from editors)
+*.swo
+*.swn
 
 # CMake files
 CMakeFiles/
@@ -64,8 +73,24 @@ bin/
 dist/
 
 # Operating system-specific files
-Thumbs.db        # Windows
+Thumbs.db      # Windows
+.fseventsd     # macOS
+.metadata_never_index
+.noindex
+.Spotlight-V100
+.Trashes
+
+# Icon and metadata files
+Icon?
+._*
 
 # Docker files (optional)
 docker-compose.override.yml
-.env             # Environment variables (if applicable)
+.env           # Environment variables (if applicable)
+
+# IDE-specific files
+.idea/         # JetBrains IDEs
+*.xcuserstate  # Xcode
+*.xcworkspace
+*.xcodeproj/
+*.lock         # Dependency lock files
